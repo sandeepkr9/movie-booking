@@ -1,0 +1,39 @@
+.none {
+  border: 0px solid white;
+  background-color: white;
+}
+.color {
+  color: white;
+  border: 0px solid rgba(128, 128, 128, 0.437);
+  background-color: rgba(128, 128, 128, 0.386);
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+td,
+th {
+  border: 2px solid green;
+}
+td {
+  color: green;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+td:hover {
+  background-color: green;
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  background-color: rgba(13, 0, 42, 0.775);
+  height: 60px;
+}
+
+td.seat.selected {  
+	background-color: green;
+}
