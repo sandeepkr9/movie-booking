@@ -5,354 +5,409 @@
   <meta charset="UTF-8" />
   <meta http-equiv="x-UA- Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>Movie Seat Booking</title>
 </head>
 
 <body>
-  <div id="movie-container">
-    <label style="color:white">Select a Movie :</label>
+  <div class="book">
+    <div class="left">
+      <img src="../movie-booking/img/Jawan-poster.webp" alt="" id="poster">
+      <div class="play">
+        <i class="bi bi-play-fill" id="play"></i>
+      </div>
+      <div class="cont">
+        <h6>Director</h6>
+        <p>Atlee</p>
+        <h6>Starring</h6>
+        <p>	Shah Rukh Khan
+          Nayanthara
+          Vijay Sethupathi
+          Deepika Padukone</p>
+          <h6>Edit</h6>
+          <p>Ruben</p>
+      </div>
+    </div>
+    <div class="right">
+      <video id="video">
+        <source src="video/Jawan Official Trailer-(HDvideo9).mp4" type="video/mp4">
+        <source src="video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4" type="video/mp4">
+      </video>
+      <div class="head_time">
+        <h1 id="title">Jawan</h1>
+        <div class="time">
+          <h6><i class="bi bi-clock"></i> 165 min</h6>
+          <button>PG-13</button>
+        </div>
+      </div>
+      <div class="date_type">
+        <div class="left_card">
+          <h6 class="title">Saturday 20 September</h6>
+          <div class="card_month crd">
+            <li>
+              <h6>Mon</h6>
+              <h6 class="date_point">1</h6>
+            </li>
+            <li>
+              <h6>Tue</h6>
+              <h6 class="date_point">2</h6>
+            </li>
+            <li>
+              <h6>Wed</h6>
+              <h6 class="date_point">3</h6>
+            </li>
+            <li>
+              <h6>Thu</h6>
+              <h6 class="date_point">4</h6>
+            </li>
+            <li>
+              <h6>Fri</h6>
+              <h6 class="date_point">5</h6>
+            </li>
+            <li>
+              <h6>Sat</h6>
+              <h6 class="date_point">6</h6>
+            </li>
+            <li>
+              <h6>Sun</h6>
+              <h6 class="date_point">7</h6>
+            </li>
+            <li>
+              <h6>Mon</h6>
+              <h6 class="date_point">8</h6>
+            </li>
+            <li>
+              <h6>Tue</h6>
+              <h6 class="date_point">9</h6>
+            </li>
+            <li>
+              <h6>Wed</h6>
+              <h6 class="date_point">10</h6>
+            </li>
+            <li>
+              <h6>Thu</h6>
+              <h6 class="date_point">11</h6>
+            </li>
+            <li>
+              <h6>Fri</h6>
+              <h6 class="date_point">12</h6>
+            </li>
+            <li>
+              <h6>Sat</h6>
+              <h6 class="date_point">13</h6>
+            </li>
+            <li>
+              <h6>Sun</h6>
+              <h6 class="date_point">14</h6>
+            </li>
+          </div>
+        </div>
 
-    <select id="movie">
-      <option value="470" selected> Brahmastra: Part One Shiva U/A</option>
-    </select>
-    <p style="color: white">Cinepolis: Nexus Shanthiniketan, Bengaluru | Today, 12
-      <sup>th</sup>Sep, 06:55 PM
-    </p>
+        <div class="right-card crd">
+          <h6 class="title">Show Time</h6>
+          <div class="card_month crd">
+            <li>
+              <h6>2D</h6>
+              <h6>9:00</h6>
+            </li>
+            <li>
+              <h6>2D</h6>
+              <h6>12:00</h6>
+            </li>
+            <li>
+              <h6>2D</h6>
+              <h6>9:00</h6>
+            </li>
+            <li>
+              <h6>2D</h6>
+              <h6>12:00</h6>
+            </li>
+            <li>
+              <h6>3D</h6>
+              <h6>9:00</h6>
+            </li>
+            <li>
+              <h6 class="h6_active">3D</h6>
+              <h6>12:00</h6>
+            </li>
+            <li>
+              <h6>4D</h6>
+              <h6>9:00</h6>
+            </li>
+            <li>
+              <h6>4D</h6>
+              <h6>12:00</h6>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        screen
+      </div>
+
+      <div class="chair" id="chair">
+        <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div>
+        <!-- <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div> -->
+        <!-- <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div>
+        <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div>
+        <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div>
+        <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div>
+        <div class="row">
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+          <li class="seat">560</li>
+        </div> -->
+      </div>
+
+      <div class="ticket">
+        <div class="tic">
+          <!-- <div class="barcode">
+            <div class="card">
+              <h6>ROW J</h6>
+              <h6>7 September 2024</h6>
+            </div>
+            <div class="card">
+              <h6>Seat 18</h6>
+              <h6>23:00</h6>
+            </div>
+            <svg id="barcode"></svg>
+            <h5>Inox Cinema</h5>
+          </div>
+          <div class="tic_details">
+            <div class="type">4DX</div>
+            <h5 class="pvr"><span>Inox </span>Cinema</h5>
+            <h1>Jawan</h1>
+            <div class="seat-det">
+              <div class="seat-cr">
+                <h6>ROW</h6>
+                <h6>J</h6>
+              </div>
+              <div class="seat-cr">
+                <h6>Seat</h6>
+                <h6>18</h6>
+              </div>
+              <div class="seat-cr">
+                <h6>Date</h6>
+                <h6>7 <sub>September </sub> </h6>
+              </div>
+              <div class="seat-cr">
+                <h6>Time</h6>
+                <h6>11:30 PM</h6>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="tic_details"></div>
+        </div>
+      </div>
+
+      <div class="details" id="det">
+        <div class="details_chair">
+          <li>Available</li>
+          <li>Booked</li>
+          <li>Selected</li>
+        </div>
+      </div>
+
+      <button class="book_ticket" id="book-ticket">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+      <button class="book_ticket" id="back-ticket">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+    </div>
   </div>
 
-  <p>PREMIMUM - Rs.470.00</p>
-
-  <table cellspacing="11" width="70%" class="container">
-
-    <tr class="row">
-      <td class="seat">27</td>
-      <td class="color">26</td>
-      <td class="color">25</td>
-      <td class="color">24</td>
-      <td class="color">23</td>
-      <td class="color">22</td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td class="color">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="seat">16</td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td class="seat">06</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-
-    <tr class="row">
-      <td class="none"></td>
-      <td class="color">25</td>
-      <td class="color">24</td>
-      <td class="color">23</td>
-      <td class="color">22</td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="color">16</td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">06</td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="seat">25</td>
-      <td class="seat">24</td>
-      <td class="seat">23</td>
-      <td class="seat">22</td>
-      <td class="seat">21</td>
-      <td class="seat">20</td>
-      <td colspan="2" class="none"></td>
-      <td class="seat">19</td>
-      <td class="seat">18</td>
-      <td class="seat">17</td>
-      <td class="seat">16</td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="seat">11</td>
-      <td class="seat">10</td>
-      <td class="seat">09</td>
-      <td class="seat">08</td>
-      <td class="seat">07</td>
-      <td colspan="3" class="none"></td>
-      <td class="seat">06</td>
-      <td class="seat">05</td>
-      <td class="seat">04</td>
-      <td class="seat">03</td>
-      <td class="seat">02</td>
-      <td class="seat">01</td>
-    </tr>
-  </table>
-
-  <p>EXECUTIVE - Rs.450.00</p>
-
-  <table cellspacing="8" width="70%" class="container">
-    <tr class="row">
-      <td style="padding: 5px;" class="none"></td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td class="color">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="color">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td class="color">06</td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td class="color">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="color">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td class="color">06</td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td class="color">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="color">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td class="color">06</td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="color">21</td>
-      <td class="color">20</td>
-      <td class="seat">19</td>
-      <td class="color">18</td>
-      <td class="color">17</td>
-      <td class="color">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="color">13</td>
-      <td class="color">12</td>
-      <td class="color">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="color">08</td>
-      <td class="color">07</td>
-      <td class="color">06</td>
-      <td class="color">05</td>
-      <td class="color">04</td>
-      <td class="color">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="color">02</td>
-      <td class="color">01</td>
-    </tr>
-
-    <tr class="row">
-      <td class="none"></td>
-      <td class="seat">21</td>
-      <td class="seat">20</td>
-      <td class="seat">19</td>
-      <td class="seat">18</td>
-      <td class="seat">17</td>
-      <td class="seat">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="color">15</td>
-      <td class="color">14</td>
-      <td class="seat">13</td>
-      <td class="seat">12</td>
-      <td class="seat">11</td>
-      <td class="color">10</td>
-      <td class="color">09</td>
-      <td class="seat">08</td>
-      <td class="seat">07</td>
-      <td class="seat">06</td>
-      <td class="seat">05</td>
-      <td class="seat">04</td>
-      <td class="seat">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="seat">02</td>
-      <td class="seat">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="seat">21</td>
-      <td class="seat">20</td>
-      <td class="seat">19</td>
-      <td class="seat">18</td>
-      <td class="seat">17</td>
-      <td class="seat">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="seat">15</td>
-      <td class="seat">14</td>
-      <td class="seat">13</td>
-      <td class="seat">12</td>
-      <td class="seat">11</td>
-      <td class="seat">10</td>
-      <td class="seat">09</td>
-      <td class="seat">08</td>
-      <td class="seat">07</td>
-      <td class="seat">06</td>
-      <td class="seat">05</td>
-      <td class="seat">04</td>
-      <td class="seat">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="seat">02</td>
-      <td class="seat">01</td>
-    </tr>
-  </table>
-
-  <p>NORMAL - Rs.430.00</p>
-  <table cellspacing="8" width="70%" class="container">
-    <tr class="row">
-      <td class="none"></td>
-      <td class="seat">21</td>
-      <td class="seat">20</td>
-      <td class="seat">19</td>
-      <td class="seat">18</td>
-      <td class="seat">17</td>
-      <td class="seat">16</td>
-      <td colspan="2" class="none"></td>
-      <td class="seat">15</td>
-      <td class="seat">14</td>
-      <td class="seat">13</td>
-      <td class="seat">12</td>
-      <td class="seat">11</td>
-      <td class="seat">10</td>
-      <td class="seat">09</td>
-      <td class="seat">08</td>
-      <td class="seat">07</td>
-      <td class="seat">06</td>
-      <td class="seat">05</td>
-      <td class="seat">04</td>
-      <td class="seat">03</td>
-      <td colspan="3" class="none"></td>
-      <td class="seat">02</td>
-      <td class="seat">01</td>
-    </tr>
-    <tr class="row">
-      <td class="none"></td>
-      <td class="seat">20</td>
-      <td class="seat">19</td>
-      <td class="seat">18</td>
-      <td class="seat">17</td>
-      <td class="seat">16</td>
-      <td class="color">15</td>
-      <td colspan="2" class="none"></td>
-      <td class="seat">14</td>
-      <td class="seat">13</td>
-      <td class="seat">12</td>
-      <td class="seat">11</td>
-      <td class="seat">10</td>
-      <td class="seat">09</td>
-      <td class="seat">08</td>
-      <td class="seat">07</td>
-      <td class="seat">06</td>
-      <td class="seat">05</td>
-      <td class="seat">04</td>
-      <td class="seat">03</td>
-      <td class="none"></td>
-      <td class="none"></td>
-      <td class="none"></td>
-      <td class="none"></td>
-      <td class="seat">02</td>
-      <td class="seat">01</td>
-    </tr>
-  </table>
-  </div>
-  <div style="padding-left: 45%; background-color: white; height: 20%; width: 100%;">
-
-    <button style="width: 150px; height: 40px; background-color: red;" type="button">
-      <p class="text">
-        Pay Rs. 
-        <span id="total">0</span>
-        <span id="count" style="display: none;"></span> 
-
-      </p>
-    </button>
-
-    
-
-  </div>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.js"></script>
+  <script>
+    JsBarcode("#barcode", "773210789812");
+  </script>
 </body>
-
-<script src="script.js"></script>
-
 </html>

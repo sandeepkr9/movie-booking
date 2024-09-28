@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.port": 5501,
+  "files.autoSaveDelay": 0,
+  "files.autoSaveWhenNoErrors": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveWorkspaceFilesOnly": true,
+  "editor.codeActions.triggerOnFocusChange": true
+}
